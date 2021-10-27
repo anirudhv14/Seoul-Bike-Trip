@@ -57,4 +57,4 @@ if st.button('Predict'):
 	y_pred = lgbm.predict(X_test).reshape(-1,1)
 	y = scalary.inverse_transform(y_pred)
 
-	st.write("Predicted duration:" + str(round(y[0][0])) + " mins")
+	st.write("Predicted duration: " + str(round(y[0][0])) + " mins")
